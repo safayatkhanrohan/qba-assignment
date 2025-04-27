@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Forecasting Presentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <div class="container mx-auto py-10 space-y-12">
+        <!-- Slide 1 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h1 class="text-4xl font-bold mb-4">Business Forecasting &ndash; Methods, Applications & Importance</h1>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">Why Forecast? A Quick Quiz</h2>
+            <p class="italic mb-4">“Last quarter, Apple’s CFO warned of a 10% dip in iPhone sales—yet the team still
+                beat revenue targets. How? Forecasting.”</p>
+            <ol class="list-decimal list-inside space-y-2">
+                <li>If your company projected <span class="font-bold text-blue-600">–10% sales</span>, would you:<ul
+                        class="list-inside list-disc ml-4">
+                        <li>Cut production by 10%</li>
+                        <li>Run promotions to defend volume</li>
+                    </ul>
+                </li>
+                <li>If your supply chain lead-time is <span class="font-bold text-blue-600">4 weeks</span>, how many
+                    weeks of safety stock do you hold?</li>
+            </ol>
+        </section>
+
+        <!-- Slide 3 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">What Is Business Forecasting?</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li><span class="font-bold">Definition:</span> Systematic use of <span class="font-semibold">historical
+                        data</span>, <span class="font-semibold">statistical models</span> & <span
+                        class="font-semibold">expert judgment</span> to predict future metrics.</li>
+                <li><span class="font-bold">Key Metrics:</span> Sales, costs, cash-flow, headcount.</li>
+            </ul>
+            <p class="mt-4 italic">“Forecasting is your business’s weather report—so you never get caught in a storm.”
+            </p>
+        </section>
+
+        <!-- Slide 4 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">Methods Overview</h2>
+            <div class="grid grid-cols-2 gap-6">
+                <ul class="list-disc list-inside space-y-2">
+                    <li>Delphi & Expert Panels</li>
+                    <li>Market Research & Focus Groups</li>
+                </ul>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>Time-Series (MA, Exponential Smoothing)</li>
+                    <li>Causal Models (Regression, ARIMAX)</li>
+                </ul>
+            </div>
+            <p class="mt-4"><span class="font-semibold">When to use:</span> New product/market &rarr; Qualitative;
+                Established trends &rarr; Quantitative</p>
+        </section>
+
+        <!-- Slide 5 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">Qualitative Methods</h2>
+            <ul class="list-decimal list-inside space-y-4">
+                <li>
+                    <p><span class="font-semibold">Delphi Technique:</span> Round-robin surveys of 10–15 experts until
+                        consensus.</p>
+                    <p class="text-sm text-gray-600">Example: Gartner’s 2023 AI market forecast: US$62B by year-end
+                        (±10%).</p>
+                </li>
+                <li>
+                    <p><span class="font-semibold">Market Research:</span> Surveys & focus groups of 500+ consumers.</p>
+                    <p class="text-sm text-gray-600">Example: Nike’s Spring ’24 footwear survey (N=1,200) drove 15%
+                        design tweaks.</p>
+                </li>
+            </ul>
+            <p class="mt-4">+ Fast, flexible &nbsp;&nbsp;– Subjective, bias risk</p>
+        </section>
+
+        <!-- Slide 6 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">Quantitative Methods (Time-Series)</h2>
+            <p class="font-semibold mb-2">Apple Quarterly Revenue (US$B)</p>
+            <table class="table-auto w-full mb-4">
+                <thead>
+                    <tr>
+                        <th>Q3 2023</th>
+                        <th>Q4 2023</th>
+                        <th>Q1 2024</th>
+                        <th>Q2 2024</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td>81.8</td>
+                        <td>89.5</td>
+                        <td>117.2</td>
+                        <td>94.8</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>3-month MA for Q3 2024: <span class="font-semibold">(89.5 + 117.2 + 94.8)/3 = 100.5 B</span></p>
+        </section>
+
+        <!-- Slide 7 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">Quantitative Methods (Causal Model)</h2>
+            <p class="font-semibold mb-2">Linking US GDP to Amazon Revenue</p>
+            <table class="table-auto w-full mb-4">
+                <thead>
+                    <tr>
+                        <th>Quarter</th>
+                        <th>US GDP (T)</th>
+                        <th>Amazon Rev (B)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td>Q1 2023</td>
+                        <td>25.46</td>
+                        <td>127.4</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>Q2 2023</td>
+                        <td>25.86</td>
+                        <td>134.4</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>Q3 2023</td>
+                        <td>26.02</td>
+                        <td>143.4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Regression: Rev = -546 + 26.4 × GDP</p>
+            <p>Forecast if GDP = 26.5 T: <span class="font-semibold">≈ 154.0 B</span></p>
+        </section>
+
+        <!-- Slide 8 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">Applications in Business</h2>
+            <ul class="space-y-4">
+                <li>Supply Chain & Inventory: Walmart cuts stockouts by 33% across 120K SKUs.</li>
+                <li>Production Scheduling: Toyota reduces idle time by 12%.</li>
+                <li>Budgeting & Cost Control: Microsoft improves ROI by 18%.</li>
+                <li>Strategic Decisions: Tesla locks in battery lithium contracts early.</li>
+            </ul>
+        </section>
+
+        <!-- Slide 9 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">Importance & Impact</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Risk Reduction: Avoid overproduction or stockouts.</li>
+                <li>Competitive Edge: Netflix forecasted 8.8M net adds vs. consensus 5M (Q1 2024).</li>
+                <li>Resource Optimization: Saved 7% in carrying costs on $50M capex.</li>
+                <li>Real-World Win: Amazon cut order delays by 40% in Q4 staffing.</li>
+            </ul>
+        </section>
+
+        <!-- Slide 10 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">Our Self-Learnings</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Even perfect models need expert tweaks.</li>
+                <li>Manager involvement in Delphi boosts adoption by 30%.</li>
+                <li>Iterate: our MA shifted 12% with new June data.</li>
+            </ul>
+            <p class="mt-4 italic">“Building the Apple MA taught me how smoothing reveals real trends.”</p>
+        </section>
+
+        <!-- Slide 11 -->
+        <section class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">References & Q&A</h2>
+            <ol class="list-decimal list-inside space-y-2">
+                <li>Makridakis, Wheelwright & Hyndman, <em>Forecasting Methods</em> (2022).</li>
+                <li>Hyndman & Athanasopoulos, <em>Forecasting: Principles and Practice</em> (3rd ed.).</li>
+                <li>US Census Bureau, Q2 2024 Retail e-commerce Sales.</li>
+                <li>Netflix Q1 2024 Earnings Call Transcript.</li>
+            </ol>
+            <p class="mt-4">Q: Which method would you trust most for a new product launch—and why?</p>
+        </section>
+    </div>
+</body>
+
+</html>
